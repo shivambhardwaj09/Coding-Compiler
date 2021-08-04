@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap">
+    <link rel="icon" href="./images/web-icon.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Coding Compiler</title>
+</head>
+<body>
+    <section class="coding-editor">
+        <div class="editor-menu">
+            <button class="dark-light-btn btn" data-dark-light>Dark/Light</button>
+            <button class="tilt-btn btn" data-tilt-screen>Tilt</button>
+            <button class="run-btn btn" data-run-code>Run</button>
+            <select name="" id="language">
+                <option selected disabled class="hide">Language</option>
+                <option value="7">C</option>
+                <option value="77">C++</option>
+                <option value="8">Java</option>
+                <option value="0">Python</option>
+                <option value="4">Javascript</option>
+            </select>
+        </div>
+        <div class="editor-container">
+            <div class="left">
+                TYPE YOUR CODE
+                <textarea name="" class="editor" data-language-coding></textarea>
+            </div>
+            <div class="bar" title="click and drag"></div>
+            <div class="right">
+                TERMINAL
+                <p class="iframe" data-display-output></p>
+            </div>
+        </div>
+    </section>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
